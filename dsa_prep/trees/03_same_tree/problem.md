@@ -32,3 +32,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(min(n, m))
 - Space: O(min(h1, h2)) recursion stack
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 trees/03_same_tree/solution.py`):
+
+```python
+--8<-- "trees/03_same_tree/solution.py"
+```

@@ -37,3 +37,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(L) per operation, L = length of the word/prefix
 - Space: O(total characters inserted)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 tries/01_implement_trie/solution.py`):
+
+```python
+--8<-- "tries/01_implement_trie/solution.py"
+```

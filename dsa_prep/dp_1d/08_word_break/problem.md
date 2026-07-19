@@ -33,3 +33,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n²) (or O(n² · maxWordLen) depending on substring slicing cost)
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 dp_1d/08_word_break/solution.py`):
+
+```python
+--8<-- "dp_1d/08_word_break/solution.py"
+```

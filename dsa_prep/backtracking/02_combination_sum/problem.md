@@ -35,3 +35,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: exponential in the worst case, bounded by the number of valid combinations
 - Space: O(target / min(candidates)) recursion depth
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 backtracking/02_combination_sum/solution.py`):
+
+```python
+--8<-- "backtracking/02_combination_sum/solution.py"
+```

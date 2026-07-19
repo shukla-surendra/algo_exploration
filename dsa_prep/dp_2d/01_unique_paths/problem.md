@@ -34,3 +34,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(m·n)
 - Space: O(n) using a rolling 1-D array
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 dp_2d/01_unique_paths/solution.py`):
+
+```python
+--8<-- "dp_2d/01_unique_paths/solution.py"
+```

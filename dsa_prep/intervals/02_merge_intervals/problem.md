@@ -33,3 +33,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n log n) (dominated by the sort)
 - Space: O(n) for the output
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 intervals/02_merge_intervals/solution.py`):
+
+```python
+--8<-- "intervals/02_merge_intervals/solution.py"
+```

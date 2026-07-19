@@ -32,3 +32,10 @@ rather than clever.
 ## Complexity
 - Time: O(32) = O(1)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 bit_manipulation/04_reverse_bits/solution.py`):
+
+```python
+--8<-- "bit_manipulation/04_reverse_bits/solution.py"
+```

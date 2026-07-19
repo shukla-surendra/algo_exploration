@@ -32,3 +32,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(1) iterative (O(n) recursion stack if done recursively)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 linked_list/01_reverse_linked_list/solution.py`):
+
+```python
+--8<-- "linked_list/01_reverse_linked_list/solution.py"
+```

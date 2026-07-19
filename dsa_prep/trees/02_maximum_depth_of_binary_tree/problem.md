@@ -32,3 +32,10 @@ rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(h) recursion stack
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 trees/02_maximum_depth_of_binary_tree/solution.py`):
+
+```python
+--8<-- "trees/02_maximum_depth_of_binary_tree/solution.py"
+```

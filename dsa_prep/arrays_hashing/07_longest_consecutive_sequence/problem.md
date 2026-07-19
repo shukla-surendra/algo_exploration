@@ -34,3 +34,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 arrays_hashing/07_longest_consecutive_sequence/solution.py`):
+
+```python
+--8<-- "arrays_hashing/07_longest_consecutive_sequence/solution.py"
+```

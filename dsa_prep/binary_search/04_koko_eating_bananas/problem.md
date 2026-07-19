@@ -36,3 +36,10 @@ rather than clever.
 ## Complexity
 - Time: O(n · log(max(piles)))
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 binary_search/04_koko_eating_bananas/solution.py`):
+
+```python
+--8<-- "binary_search/04_koko_eating_bananas/solution.py"
+```

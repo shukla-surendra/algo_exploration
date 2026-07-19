@@ -35,3 +35,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n log n)
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 greedy/04_hand_of_straights/solution.py`):
+
+```python
+--8<-- "greedy/04_hand_of_straights/solution.py"
+```

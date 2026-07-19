@@ -33,3 +33,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n log k)
 - Space: O(k)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 heap_priority_queue/03_k_closest_points_to_origin/solution.py`):
+
+```python
+--8<-- "heap_priority_queue/03_k_closest_points_to_origin/solution.py"
+```

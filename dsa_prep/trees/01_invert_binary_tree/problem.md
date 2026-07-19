@@ -31,3 +31,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(h) recursion stack, h = tree height
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 trees/01_invert_binary_tree/solution.py`):
+
+```python
+--8<-- "trees/01_invert_binary_tree/solution.py"
+```

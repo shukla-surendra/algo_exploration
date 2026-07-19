@@ -36,3 +36,10 @@ rather than clever.
 ## Complexity
 - Time: O(n + E · α(n))
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 graphs/06_graph_valid_tree/solution.py`):
+
+```python
+--8<-- "graphs/06_graph_valid_tree/solution.py"
+```

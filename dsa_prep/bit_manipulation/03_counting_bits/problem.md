@@ -35,3 +35,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(n) for the output (O(1) extra)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 bit_manipulation/03_counting_bits/solution.py`):
+
+```python
+--8<-- "bit_manipulation/03_counting_bits/solution.py"
+```

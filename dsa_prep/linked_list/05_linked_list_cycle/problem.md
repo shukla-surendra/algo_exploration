@@ -33,3 +33,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 linked_list/05_linked_list_cycle/solution.py`):
+
+```python
+--8<-- "linked_list/05_linked_list_cycle/solution.py"
+```

@@ -36,3 +36,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n log n)
 - Space: O(1) extra (excluding sort)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 intervals/03_non_overlapping_intervals/solution.py`):
+
+```python
+--8<-- "intervals/03_non_overlapping_intervals/solution.py"
+```

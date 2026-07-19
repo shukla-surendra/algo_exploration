@@ -38,3 +38,10 @@ rather than clever.
 ## Complexity
 - Time: O(N · L²) where N = number of words, L = word length (building the pattern map)
 - Space: O(N · L²)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 graphs/07_word_ladder/solution.py`):
+
+```python
+--8<-- "graphs/07_word_ladder/solution.py"
+```

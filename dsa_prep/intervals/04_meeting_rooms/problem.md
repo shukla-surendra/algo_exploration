@@ -33,3 +33,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n log n)
 - Space: O(1) extra (excluding sort)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 intervals/04_meeting_rooms/solution.py`):
+
+```python
+--8<-- "intervals/04_meeting_rooms/solution.py"
+```

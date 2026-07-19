@@ -1,0 +1,72 @@
+site_name: ML System Design Prep
+site_description: ML/LLM system design tutorials for the service-to-product-company transition plan (Track B).
+docs_dir: system_design
+site_dir: site-system-design
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - toc:
+      permalink: true
+  - tables
+
+nav:
+  - Overview: README.md
+  - DSA Prep (Track A): http://127.0.0.1:8000/
+  - 0. Interview Framework: 00_interview_framework/tutorial.md
+  - 1. Fundamentals & Building Blocks: 01_fundamentals/tutorial.md
+  - 2. High-Throughput Ingestion Pipelines: 02_ingestion_pipeline/tutorial.md
+  - 3. Feature Store & Model Promotion: 03_feature_store_model_promotion/tutorial.md
+  - 4. Model Serving & Deployment: 04_model_serving_deployment/tutorial.md
+  - 5. ML/LLM Observability & Drift: 05_observability_drift/tutorial.md
+  - 6. RAG + LLM-Serving at Scale: 06_rag_llm_serving_at_scale/tutorial.md
+  - 7. Distributed Training & Ray/Ray Serve: 07_distributed_training_serving/tutorial.md
+  - 8. ML Orchestration (Kubeflow/Argo vs Airflow): 08_ml_orchestration/tutorial.md
+  - 9. GitOps & CI/CD for ML: 09_gitops_ml_cicd/tutorial.md
+  - 10. Cost, Security & Multi-Region Governance: 10_cost_security_multiregion/tutorial.md
+  - Tricky MLOps Scenarios:
+      - Overview: 11_tricky_scenarios/README.md
+      - "1. Regional Feature Staleness": 11_tricky_scenarios/01_regional_feature_staleness.md
+      - "2. Canary Passed, P1 Two Days Later": 11_tricky_scenarios/02_canary_passed_p1_later.md
+      - "3. Silent Drift, No Alert": 11_tricky_scenarios/03_silent_drift_no_alert.md
+      - "4. Overnight GPU Cost Spike": 11_tricky_scenarios/04_gpu_cost_spike.md
+      - "5. Retrieval Looks Right, Answers Wrong": 11_tricky_scenarios/05_rag_retrieval_correct_answers_wrong.md
+      - "6. Silently Duplicated Training Data": 11_tricky_scenarios/06_duplicate_training_data.md
+      - "7. Multi-GPU Training Plateau": 11_tricky_scenarios/07_distributed_training_plateau.md
+      - "8. Stale Checkpoint After Preemption": 11_tricky_scenarios/08_stale_checkpoint_resume.md
+      - "9. GitOps Rollout, Wrong Predictions": 11_tricky_scenarios/09_gitops_rollout_wrong_predictions.md
+      - "10. Reconstructing Model Lineage for an Audit": 11_tricky_scenarios/10_audit_lineage_reconstruction.md
+      - "11. Serving Cost Doubled After a Routine Upgrade": 11_tricky_scenarios/11_serving_cost_doubled.md
+      - "12. DR Failover Took 8x Longer Than Planned": 11_tricky_scenarios/12_dr_failover_slow.md

@@ -36,3 +36,10 @@ rather than clever.
 ## Complexity
 - Time: O(n + E · α(n)) with union-find (α = inverse Ackermann, effectively constant)
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 graphs/05_number_of_connected_components/solution.py`):
+
+```python
+--8<-- "graphs/05_number_of_connected_components/solution.py"
+```

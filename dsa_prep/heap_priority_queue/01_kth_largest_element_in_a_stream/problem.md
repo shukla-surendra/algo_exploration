@@ -32,3 +32,10 @@ rather than clever.
 ## Complexity
 - Time: O(log k) per `add`
 - Space: O(k)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 heap_priority_queue/01_kth_largest_element_in_a_stream/solution.py`):
+
+```python
+--8<-- "heap_priority_queue/01_kth_largest_element_in_a_stream/solution.py"
+```

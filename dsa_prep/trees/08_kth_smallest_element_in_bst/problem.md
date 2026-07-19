@@ -33,3 +33,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(h + k) where h = tree height
 - Space: O(h)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 trees/08_kth_smallest_element_in_bst/solution.py`):
+
+```python
+--8<-- "trees/08_kth_smallest_element_in_bst/solution.py"
+```

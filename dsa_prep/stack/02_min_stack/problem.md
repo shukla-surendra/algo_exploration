@@ -36,3 +36,10 @@ rather than clever.
 ## Complexity
 - Time: O(1) for every operation
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 stack/02_min_stack/solution.py`):
+
+```python
+--8<-- "stack/02_min_stack/solution.py"
+```

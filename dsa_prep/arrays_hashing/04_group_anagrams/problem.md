@@ -33,3 +33,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n·k) where n = number of strings, k = max string length (using count signature)
 - Space: O(n·k)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 arrays_hashing/04_group_anagrams/solution.py`):
+
+```python
+--8<-- "arrays_hashing/04_group_anagrams/solution.py"
+```

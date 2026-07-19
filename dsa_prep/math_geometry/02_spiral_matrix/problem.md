@@ -34,3 +34,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(m·n)
 - Space: O(1) extra (excluding output)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 math_geometry/02_spiral_matrix/solution.py`):
+
+```python
+--8<-- "math_geometry/02_spiral_matrix/solution.py"
+```

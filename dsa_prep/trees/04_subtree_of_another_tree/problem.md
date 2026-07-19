@@ -32,3 +32,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n · m) worst case (n = size of root, m = size of subRoot)
 - Space: O(h) recursion stack
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 trees/04_subtree_of_another_tree/solution.py`):
+
+```python
+--8<-- "trees/04_subtree_of_another_tree/solution.py"
+```

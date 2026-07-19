@@ -36,3 +36,10 @@ rather than clever.
 ## Complexity
 - Time: O(n²)
 - Space: O(1) extra (excluding output; O(n) if sort isn't in-place)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 two_pointers/02_3sum/solution.py`):
+
+```python
+--8<-- "two_pointers/02_3sum/solution.py"
+```

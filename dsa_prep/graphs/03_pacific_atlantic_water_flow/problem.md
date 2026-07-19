@@ -36,3 +36,10 @@ make the specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(m·n)
 - Space: O(m·n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 graphs/03_pacific_atlantic_water_flow/solution.py`):
+
+```python
+--8<-- "graphs/03_pacific_atlantic_water_flow/solution.py"
+```

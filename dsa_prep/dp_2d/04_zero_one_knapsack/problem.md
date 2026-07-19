@@ -35,3 +35,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n·W)
 - Space: O(n·W) (reducible to O(W) with a rolling array, iterating capacity in reverse)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 dp_2d/04_zero_one_knapsack/solution.py`):
+
+```python
+--8<-- "dp_2d/04_zero_one_knapsack/solution.py"
+```

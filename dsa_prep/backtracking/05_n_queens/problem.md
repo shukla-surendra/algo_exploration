@@ -39,3 +39,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n!) worst case, pruned heavily by the conflict checks
 - Space: O(n) for the tracking sets + recursion stack
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 backtracking/05_n_queens/solution.py`):
+
+```python
+--8<-- "backtracking/05_n_queens/solution.py"
+```

@@ -33,3 +33,10 @@ specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n²)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 dp_1d/05_palindromic_substrings/solution.py`):
+
+```python
+--8<-- "dp_1d/05_palindromic_substrings/solution.py"
+```

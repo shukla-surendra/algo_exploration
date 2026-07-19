@@ -33,3 +33,10 @@ rather than clever.
 ## Complexity
 - Time: O(n log n)
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 heap_priority_queue/02_last_stone_weight/solution.py`):
+
+```python
+--8<-- "heap_priority_queue/02_last_stone_weight/solution.py"
+```

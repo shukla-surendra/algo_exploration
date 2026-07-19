@@ -34,3 +34,10 @@ rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 sliding_window/01_best_time_to_buy_sell_stock/solution.py`):
+
+```python
+--8<-- "sliding_window/01_best_time_to_buy_sell_stock/solution.py"
+```

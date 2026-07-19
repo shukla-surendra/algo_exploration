@@ -34,3 +34,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(1) extra (output array doesn't count)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 arrays_hashing/06_product_of_array_except_self/solution.py`):
+
+```python
+--8<-- "arrays_hashing/06_product_of_array_except_self/solution.py"
+```

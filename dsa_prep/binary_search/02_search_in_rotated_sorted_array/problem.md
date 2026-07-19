@@ -33,3 +33,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(log n)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 binary_search/02_search_in_rotated_sorted_array/solution.py`):
+
+```python
+--8<-- "binary_search/02_search_in_rotated_sorted_array/solution.py"
+```

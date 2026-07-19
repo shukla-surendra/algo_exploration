@@ -38,3 +38,10 @@ make the specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(m·n·4^L) worst case, L = max word length, heavily pruned in practice by the trie
 - Space: O(sum of word lengths) for the trie + O(L) recursion stack
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 tries/03_word_search_ii/solution.py`):
+
+```python
+--8<-- "tries/03_word_search_ii/solution.py"
+```

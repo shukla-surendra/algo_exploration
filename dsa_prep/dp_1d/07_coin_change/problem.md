@@ -36,3 +36,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(amount · len(coins))
 - Space: O(amount)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 dp_1d/07_coin_change/solution.py`):
+
+```python
+--8<-- "dp_1d/07_coin_change/solution.py"
+```

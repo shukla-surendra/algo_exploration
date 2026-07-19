@@ -36,3 +36,10 @@ rather than clever.
 ## Complexity
 - Time: O(n) (26-letter alphabet, effectively O(26n) = O(n))
 - Space: O(1) (fixed 26-letter count array)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 sliding_window/03_longest_repeating_character_replacement/solution.py`):
+
+```python
+--8<-- "sliding_window/03_longest_repeating_character_replacement/solution.py"
+```

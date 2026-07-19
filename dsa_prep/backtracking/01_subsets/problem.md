@@ -33,3 +33,10 @@ rather than clever.
 ## Complexity
 - Time: O(2^n) — that many subsets exist
 - Space: O(n) recursion depth (excluding output)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 backtracking/01_subsets/solution.py`):
+
+```python
+--8<-- "backtracking/01_subsets/solution.py"
+```

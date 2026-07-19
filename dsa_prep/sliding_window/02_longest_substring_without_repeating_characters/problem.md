@@ -34,3 +34,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(min(n, alphabet size))
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 sliding_window/02_longest_substring_without_repeating_characters/solution.py`):
+
+```python
+--8<-- "sliding_window/02_longest_substring_without_repeating_characters/solution.py"
+```

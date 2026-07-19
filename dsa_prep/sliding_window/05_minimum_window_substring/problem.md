@@ -35,3 +35,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n + m) where n = len(s), m = len(t)
 - Space: O(n + m)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 sliding_window/05_minimum_window_substring/solution.py`):
+
+```python
+--8<-- "sliding_window/05_minimum_window_substring/solution.py"
+```

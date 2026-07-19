@@ -32,3 +32,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(n) (queue + output)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 trees/06_binary_tree_level_order_traversal/solution.py`):
+
+```python
+--8<-- "trees/06_binary_tree_level_order_traversal/solution.py"
+```

@@ -35,3 +35,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n·m)
 - Space: O(n·m) (reducible to O(min(n,m)) with a rolling array)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 dp_2d/02_longest_common_subsequence/solution.py`):
+
+```python
+--8<-- "dp_2d/02_longest_common_subsequence/solution.py"
+```

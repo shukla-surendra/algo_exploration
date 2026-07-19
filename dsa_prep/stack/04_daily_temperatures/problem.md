@@ -33,3 +33,10 @@ make the specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 stack/04_daily_temperatures/solution.py`):
+
+```python
+--8<-- "stack/04_daily_temperatures/solution.py"
+```

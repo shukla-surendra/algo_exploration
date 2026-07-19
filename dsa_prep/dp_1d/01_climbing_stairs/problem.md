@@ -33,3 +33,10 @@ rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 dp_1d/01_climbing_stairs/solution.py`):
+
+```python
+--8<-- "dp_1d/01_climbing_stairs/solution.py"
+```

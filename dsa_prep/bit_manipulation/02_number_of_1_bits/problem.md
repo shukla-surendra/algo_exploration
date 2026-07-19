@@ -34,3 +34,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(k), k = number of set bits (at most 32)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 bit_manipulation/02_number_of_1_bits/solution.py`):
+
+```python
+--8<-- "bit_manipulation/02_number_of_1_bits/solution.py"
+```

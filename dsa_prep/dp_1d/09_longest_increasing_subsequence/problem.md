@@ -35,3 +35,10 @@ specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n log n)
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 dp_1d/09_longest_increasing_subsequence/solution.py`):
+
+```python
+--8<-- "dp_1d/09_longest_increasing_subsequence/solution.py"
+```

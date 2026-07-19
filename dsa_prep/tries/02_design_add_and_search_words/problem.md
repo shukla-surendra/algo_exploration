@@ -36,3 +36,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(L) for a word with no wildcards; O(26^d · L) worst case with d dots
 - Space: O(total characters inserted)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 tries/02_design_add_and_search_words/solution.py`):
+
+```python
+--8<-- "tries/02_design_add_and_search_words/solution.py"
+```

@@ -34,3 +34,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(h), h = tree height (O(log n) balanced, O(n) worst case)
 - Space: O(1) iterative
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 trees/05_lowest_common_ancestor_bst/solution.py`):
+
+```python
+--8<-- "trees/05_lowest_common_ancestor_bst/solution.py"
+```

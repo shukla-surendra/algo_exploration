@@ -32,3 +32,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n! · n) — n! permutations, each built in O(n)
 - Space: O(n) recursion depth (excluding output)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 backtracking/03_permutations/solution.py`):
+
+```python
+--8<-- "backtracking/03_permutations/solution.py"
+```

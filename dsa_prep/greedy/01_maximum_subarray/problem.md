@@ -34,3 +34,10 @@ rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 greedy/01_maximum_subarray/solution.py`):
+
+```python
+--8<-- "greedy/01_maximum_subarray/solution.py"
+```

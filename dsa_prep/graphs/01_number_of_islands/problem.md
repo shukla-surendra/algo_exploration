@@ -37,3 +37,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(m·n)
 - Space: O(m·n) worst case recursion/queue depth
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 graphs/01_number_of_islands/solution.py`):
+
+```python
+--8<-- "graphs/01_number_of_islands/solution.py"
+```

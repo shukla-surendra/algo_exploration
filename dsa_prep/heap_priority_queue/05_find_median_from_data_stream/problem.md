@@ -35,3 +35,10 @@ make the specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(log n) per `add_num`, O(1) per `find_median`
 - Space: O(n)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 heap_priority_queue/05_find_median_from_data_stream/solution.py`):
+
+```python
+--8<-- "heap_priority_queue/05_find_median_from_data_stream/solution.py"
+```

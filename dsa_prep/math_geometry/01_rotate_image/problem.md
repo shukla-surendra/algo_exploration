@@ -32,3 +32,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n²)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 math_geometry/01_rotate_image/solution.py`):
+
+```python
+--8<-- "math_geometry/01_rotate_image/solution.py"
+```

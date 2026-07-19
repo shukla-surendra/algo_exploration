@@ -33,3 +33,10 @@ make the specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(N log k) where N = total nodes, k = number of lists
 - Space: O(k) for the heap
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 linked_list/06_merge_k_sorted_lists/solution.py`):
+
+```python
+--8<-- "linked_list/06_merge_k_sorted_lists/solution.py"
+```

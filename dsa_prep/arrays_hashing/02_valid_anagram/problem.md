@@ -33,3 +33,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(1) (bounded alphabet) or O(n) for a general hash map
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 arrays_hashing/02_valid_anagram/solution.py`):
+
+```python
+--8<-- "arrays_hashing/02_valid_anagram/solution.py"
+```

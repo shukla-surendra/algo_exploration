@@ -37,3 +37,10 @@ make the specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(h) recursion stack
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 trees/09_binary_tree_maximum_path_sum/solution.py`):
+
+```python
+--8<-- "trees/09_binary_tree_maximum_path_sum/solution.py"
+```

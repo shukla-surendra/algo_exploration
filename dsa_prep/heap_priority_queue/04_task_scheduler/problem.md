@@ -39,3 +39,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n) counting-based approach; O(total intervals · log 26) simulation approach
 - Space: O(1) (26-letter alphabet)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 heap_priority_queue/04_task_scheduler/solution.py`):
+
+```python
+--8<-- "heap_priority_queue/04_task_scheduler/solution.py"
+```

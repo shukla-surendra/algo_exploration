@@ -34,3 +34,10 @@ make the specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(V + E)
 - Space: O(V) for the map + recursion stack
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 graphs/02_clone_graph/solution.py`):
+
+```python
+--8<-- "graphs/02_clone_graph/solution.py"
+```

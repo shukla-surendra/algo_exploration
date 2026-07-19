@@ -35,3 +35,10 @@ rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(1)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 dp_1d/02_house_robber/solution.py`):
+
+```python
+--8<-- "dp_1d/02_house_robber/solution.py"
+```

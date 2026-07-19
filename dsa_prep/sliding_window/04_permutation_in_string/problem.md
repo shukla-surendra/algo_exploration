@@ -34,3 +34,10 @@ choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n) where n = len(s2)
 - Space: O(1) (26-letter count arrays)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 sliding_window/04_permutation_in_string/solution.py`):
+
+```python
+--8<-- "sliding_window/04_permutation_in_string/solution.py"
+```

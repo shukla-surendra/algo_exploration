@@ -35,3 +35,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(h) recursion stack
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 trees/07_validate_binary_search_tree/solution.py`):
+
+```python
+--8<-- "trees/07_validate_binary_search_tree/solution.py"
+```

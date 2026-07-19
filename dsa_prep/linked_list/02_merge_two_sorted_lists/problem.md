@@ -32,3 +32,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(n + m)
 - Space: O(1) (reuses existing nodes)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 linked_list/02_merge_two_sorted_lists/solution.py`):
+
+```python
+--8<-- "linked_list/02_merge_two_sorted_lists/solution.py"
+```

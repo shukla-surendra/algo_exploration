@@ -37,3 +37,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(V + E)
 - Space: O(V + E)
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 graphs/04_course_schedule/solution.py`):
+
+```python
+--8<-- "graphs/04_course_schedule/solution.py"
+```

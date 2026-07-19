@@ -37,3 +37,10 @@ specific choices here feel inevitable rather than clever.
 ## Complexity
 - Time: O(n)
 - Space: O(n) for the output
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 intervals/01_insert_interval/solution.py`):
+
+```python
+--8<-- "intervals/01_insert_interval/solution.py"
+```

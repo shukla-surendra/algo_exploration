@@ -35,3 +35,10 @@ inevitable rather than clever.
 ## Complexity
 - Time: O(m·n·4^L), L = len(word) — heavily pruned in practice
 - Space: O(L) recursion stack
+
+## Solution
+Runnable, with sample test cases at the bottom (`python3 backtracking/04_word_search/solution.py`):
+
+```python
+--8<-- "backtracking/04_word_search/solution.py"
+```
