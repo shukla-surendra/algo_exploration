@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Greedy
 **Pattern:** Single-pass greedy with a running deficit / total-surplus check
-**Companies:** Amazon, Meta, Bloomberg
 
 ## Problem
 There are `n` gas stations in a circle. `gas[i]` is the gas available at station `i`, and
@@ -25,6 +24,16 @@ from the previous start through `i` could have worked either (they'd only make t
 worse arriving at `i`), so reset the candidate start to `i + 1` and reset `tank` to 0. The
 final candidate start after one full pass is the answer (guaranteed valid given the total
 surplus check passed).
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Single-pass greedy with a running deficit /
+total-surplus check**, which itself belongs to the broader **Greedy** family of
+techniques. If the specific trick above feels like it came out of nowhere, that's the
+signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to
+recognize this family of problems in general (not just this one), the reusable template
+you can write from memory, the usual variations, and the mistakes people make applying
+it. Coming back to re-read this problem's approach afterward should make the specific
+choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(n)

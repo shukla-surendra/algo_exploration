@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Heap / Priority Queue
 **Pattern:** Greedy scheduling by frequency, with a cooldown constraint
-**Companies:** Amazon, Meta, Bloomberg
 
 ## Problem
 Given a list of CPU `tasks` (each a letter) and a cooldown `n` (a task must wait at least
@@ -26,6 +25,16 @@ case where there are enough distinct tasks to fill every idle slot naturally (no
 needed at all). A priority-queue simulation (pick the most frequent available task each
 round) arrives at the same answer and is the more "obviously correct" approach to derive
 under interview pressure.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Greedy scheduling by frequency, with a cooldown
+constraint**, which itself belongs to the broader **Heap / Priority Queue** family of
+techniques. If the specific trick above feels like it came out of nowhere, that's the
+signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to
+recognize this family of problems in general (not just this one), the reusable template
+you can write from memory, the usual variations, and the mistakes people make applying
+it. Coming back to re-read this problem's approach afterward should make the specific
+choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(n) counting-based approach; O(total intervals · log 26) simulation approach

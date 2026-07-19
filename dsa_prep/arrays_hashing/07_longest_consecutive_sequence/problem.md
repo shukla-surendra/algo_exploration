@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Arrays & Hashing
 **Pattern:** Hash Set, sequence-start detection
-**Companies:** Amazon, Meta, Google, Microsoft
 
 ## Problem
 Given an unsorted array of integers `nums`, return the length of the longest run of
@@ -21,6 +20,16 @@ Put all numbers in a hash set. For each number, only start counting a sequence i
 `num - 1` is **not** in the set (i.e. it's the start of a run) — this guarantees each run
 is only walked once in total, not once per element, giving true O(n) overall despite the
 inner while loop.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Hash Set, sequence-start detection**, which
+itself belongs to the broader **Hashing for O(1) Lookups** family of techniques. If the
+specific trick above feels like it came out of nowhere, that's the signal to step back
+and read [`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of
+problems in general (not just this one), the reusable template you can write from
+memory, the usual variations, and the mistakes people make applying it. Coming back to
+re-read this problem's approach afterward should make the specific choices here feel
+inevitable rather than clever.
 
 ## Complexity
 - Time: O(n)

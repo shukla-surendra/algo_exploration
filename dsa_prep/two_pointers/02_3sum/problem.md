@@ -3,8 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Two Pointers
 **Pattern:** Sort + fix one element + two pointers
-**Companies:** Amazon, Meta, Microsoft, Apple, Bloomberg — extremely common follow-up to
-Two Sum.
 
 ## Problem
 Given an integer array `nums`, return all unique triplets `[nums[i], nums[j], nums[k]]`
@@ -24,6 +22,16 @@ pointers (`left = i+1`, `right = n-1`) on the remaining sorted subarray to find 
 sum to `-nums[i]`, exactly like the classic "two sum on a sorted array" pattern. Skip
 duplicate values for `i`, and after finding a valid triplet, skip duplicate `left`/`right`
 values to avoid duplicate triplets in the output.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Sort + fix one element + two pointers**, which
+itself belongs to the broader **Two Pointers** family of techniques. If the specific
+trick above feels like it came out of nowhere, that's the signal to step back and read
+[`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of problems in
+general (not just this one), the reusable template you can write from memory, the usual
+variations, and the mistakes people make applying it. Coming back to re-read this
+problem's approach afterward should make the specific choices here feel inevitable
+rather than clever.
 
 ## Complexity
 - Time: O(n²)

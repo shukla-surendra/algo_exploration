@@ -3,7 +3,6 @@
 **Difficulty:** Hard
 **Topic:** Trees
 **Pattern:** Post-order DFS returning "best downward path", tracking a global max
-**Companies:** Amazon, Meta, Microsoft, Google — a classic hard tree DFS problem.
 
 ## Problem
 A path is any sequence of nodes connected by edges, and need not pass through the root or
@@ -24,6 +23,16 @@ best sum extending downward through one side only (clamped at 0 — negative bra
 skipped). At each node, before returning that one-sided value to the parent, also check
 `node.val + left_gain + right_gain` (the "peak through this node" case) against a global
 running maximum.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Post-order DFS returning "best downward path",
+tracking a global max**, which itself belongs to the broader **Tree Traversal (DFS &
+BFS)** family of techniques. If the specific trick above feels like it came out of
+nowhere, that's the signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it
+covers how to recognize this family of problems in general (not just this one), the
+reusable template you can write from memory, the usual variations, and the mistakes
+people make applying it. Coming back to re-read this problem's approach afterward should
+make the specific choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(n)

@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Graphs
 **Pattern:** Cycle detection in a directed graph (topological sort / DFS coloring)
-**Companies:** Amazon, Meta, Google, Bloomberg, Microsoft
 
 ## Problem
 Given `numCourses` and a list of prerequisite pairs `[a, b]` (must take `b` before `a`),
@@ -23,6 +22,17 @@ that's currently marked "visiting", that's a back edge — a cycle, so return `F
 fully exploring a node's neighbors, mark it "visited" (safe, can be revisited freely by
 other paths) and remove it from the "visiting" set. No cycle across the whole graph means
 all courses are finishable.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Cycle detection in a directed graph
+(topological sort / DFS coloring)**, which itself belongs to the broader **Graph
+Traversal (BFS, DFS, Union-Find, Topological Sort)** family of techniques. If the
+specific trick above feels like it came out of nowhere, that's the signal to step back
+and read [`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of
+problems in general (not just this one), the reusable template you can write from
+memory, the usual variations, and the mistakes people make applying it. Coming back to
+re-read this problem's approach afterward should make the specific choices here feel
+inevitable rather than clever.
 
 ## Complexity
 - Time: O(V + E)

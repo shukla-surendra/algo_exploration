@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Math & Geometry
 **Pattern:** Shrinking boundary traversal
-**Companies:** Amazon, Meta, Microsoft, Google
 
 ## Problem
 Given an `m x n` matrix, return all elements in spiral order (clockwise, from the
@@ -21,6 +20,16 @@ inward after completing its side (`top += 1`, `right -= 1`, etc.). After each of
 bottom and left traversals, re-check that `top <= bottom` / `left <= right` before
 proceeding, since a non-square matrix can exhaust a dimension mid-spiral. Repeat until the
 boundaries cross.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Shrinking boundary traversal**, which itself
+belongs to the broader **In-Place Matrix Manipulation** family of techniques. If the
+specific trick above feels like it came out of nowhere, that's the signal to step back
+and read [`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of
+problems in general (not just this one), the reusable template you can write from
+memory, the usual variations, and the mistakes people make applying it. Coming back to
+re-read this problem's approach afterward should make the specific choices here feel
+inevitable rather than clever.
 
 ## Complexity
 - Time: O(m·n)

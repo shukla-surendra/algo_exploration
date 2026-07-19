@@ -3,7 +3,6 @@
 **Difficulty:** Hard
 **Topic:** Heap / Priority Queue
 **Pattern:** Two heaps (max-heap for the lower half, min-heap for the upper half)
-**Companies:** Amazon, Google, Meta, LinkedIn, Bloomberg — a classic hard heap capstone.
 
 ## Problem
 Design a data structure that supports `add_num(num)` and `find_median()`, efficiently
@@ -22,6 +21,16 @@ at most 1). On `add_num`, insert into `small` then move its top into `large` to 
 ordering correct, then rebalance sizes by moving the top of the larger heap back if it's
 grown too big. The median is either the top of the larger-sized heap (odd total) or the
 average of both tops (even total).
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Two heaps (max-heap for the lower half, min-
+heap for the upper half)**, which itself belongs to the broader **Heap / Priority
+Queue** family of techniques. If the specific trick above feels like it came out of
+nowhere, that's the signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it
+covers how to recognize this family of problems in general (not just this one), the
+reusable template you can write from memory, the usual variations, and the mistakes
+people make applying it. Coming back to re-read this problem's approach afterward should
+make the specific choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(log n) per `add_num`, O(1) per `find_median`

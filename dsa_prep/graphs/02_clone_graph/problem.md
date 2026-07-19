@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Graphs
 **Pattern:** DFS/BFS with a hash-map of original -> clone
-**Companies:** Amazon, Meta, Google, Microsoft
 
 ## Problem
 Given a reference node in a connected undirected graph (each node has a value and a list
@@ -21,6 +20,16 @@ recursing into a node's neighbors, create its clone and store it in the map imme
 map, we return its existing clone instead of recursing again). For each neighbor, either
 reuse its clone from the map or recurse to build it, then append to the current clone's
 neighbor list.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **DFS/BFS with a hash-map of original -> clone**,
+which itself belongs to the broader **Graph Traversal (BFS, DFS, Union-Find, Topological
+Sort)** family of techniques. If the specific trick above feels like it came out of
+nowhere, that's the signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it
+covers how to recognize this family of problems in general (not just this one), the
+reusable template you can write from memory, the usual variations, and the mistakes
+people make applying it. Coming back to re-read this problem's approach afterward should
+make the specific choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(V + E)

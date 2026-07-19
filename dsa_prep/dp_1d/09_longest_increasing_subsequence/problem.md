@@ -3,8 +3,6 @@
 **Difficulty:** Medium
 **Topic:** 1-D Dynamic Programming
 **Pattern:** Patience sorting with binary search (O(n log n)), or O(n²) DP
-**Companies:** Amazon, Meta, Microsoft, Google — very commonly asked, with a well-known
-O(n log n) optimization.
 
 ## Problem
 Given an integer array `nums`, return the length of the longest strictly increasing
@@ -23,6 +21,16 @@ subsequence of length `k+1` seen so far. For each number, binary-search `tails` 
 first position `>= num` and replace it (or append if `num` is larger than everything);
 `len(tails)` at the end is the LIS length. Note `tails` itself isn't a valid subsequence —
 only its length matters.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Patience sorting with binary search (O(n log
+n)), or O(n²) DP**, which itself belongs to the broader **1-D Dynamic Programming**
+family of techniques. If the specific trick above feels like it came out of nowhere,
+that's the signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it covers how
+to recognize this family of problems in general (not just this one), the reusable
+template you can write from memory, the usual variations, and the mistakes people make
+applying it. Coming back to re-read this problem's approach afterward should make the
+specific choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(n log n)

@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Two Pointers
 **Pattern:** Two Pointers (greedy inward move)
-**Companies:** Amazon, Meta, Bloomberg, Adobe
 
 ## Problem
 Given `n` non-negative integers `height[i]` representing vertical lines on the x-axis,
@@ -22,6 +21,16 @@ Area is `min(height[left], height[right]) * (right - left)`. Moving the taller p
 inward can never increase the area (width shrinks, height is capped by the *shorter* side
 either way), so always move the pointer at the **shorter** line inward. This greedily
 explores only the moves that could possibly improve the answer.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Two Pointers (greedy inward move)**, which
+itself belongs to the broader **Two Pointers** family of techniques. If the specific
+trick above feels like it came out of nowhere, that's the signal to step back and read
+[`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of problems in
+general (not just this one), the reusable template you can write from memory, the usual
+variations, and the mistakes people make applying it. Coming back to re-read this
+problem's approach afterward should make the specific choices here feel inevitable
+rather than clever.
 
 ## Complexity
 - Time: O(n)

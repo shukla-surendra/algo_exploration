@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Graphs
 **Pattern:** Multi-source DFS/BFS from the borders, run backward
-**Companies:** Amazon, Google, Meta
 
 ## Problem
 Given an `m x n` grid of heights, water can flow from a cell to a neighbor with height
@@ -23,6 +22,16 @@ cell** of each ocean, moving to a neighbor only if that neighbor's height is `>=
 current cell's (this is water flowing "uphill" in reverse, equivalent to "could flow down
 to here"). This marks every cell that ocean's water can be traced back from. A cell in
 both the Pacific-reachable and Atlantic-reachable sets is part of the answer.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Multi-source DFS/BFS from the borders, run
+backward**, which itself belongs to the broader **Graph Traversal (BFS, DFS, Union-Find,
+Topological Sort)** family of techniques. If the specific trick above feels like it came
+out of nowhere, that's the signal to step back and read [`../PATTERN.md`](../PATTERN.md)
+— it covers how to recognize this family of problems in general (not just this one), the
+reusable template you can write from memory, the usual variations, and the mistakes
+people make applying it. Coming back to re-read this problem's approach afterward should
+make the specific choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(m·n)

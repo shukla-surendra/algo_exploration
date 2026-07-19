@@ -3,8 +3,6 @@
 **Difficulty:** Hard
 **Topic:** Sliding Window
 **Pattern:** Variable window with a "have vs need" counter
-**Companies:** Meta, Amazon, Google, Uber, Bloomberg — a classic hard sliding-window
-capstone problem.
 
 ## Problem
 Given strings `s` and `t`, return the minimum-length substring of `s` that contains every
@@ -23,6 +21,16 @@ their required count in `need`. Once `have == len(need)` (window contains everyt
 needed), try shrinking from the left as much as possible while it stays valid, recording
 the best (smallest) valid window found. This is the standard "grow to find validity,
 shrink to minimize" sliding window template.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Variable window with a "have vs need"
+counter**, which itself belongs to the broader **Sliding Window** family of techniques.
+If the specific trick above feels like it came out of nowhere, that's the signal to step
+back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family
+of problems in general (not just this one), the reusable template you can write from
+memory, the usual variations, and the mistakes people make applying it. Coming back to
+re-read this problem's approach afterward should make the specific choices here feel
+inevitable rather than clever.
 
 ## Complexity
 - Time: O(n + m) where n = len(s), m = len(t)

@@ -3,7 +3,6 @@
 **Difficulty:** Easy
 **Topic:** Heap / Priority Queue
 **Pattern:** Max-heap simulation
-**Companies:** Amazon, Google
 
 ## Problem
 You have stones with weights `stones`. Repeatedly smash the two heaviest stones together:
@@ -20,6 +19,16 @@ Input: stones = [2,7,4,1,8,1] -> 1
 Python's `heapq` is a min-heap, so negate values to simulate a max-heap. Repeatedly pop
 the two largest (most negative), and if they differ, push the difference back (re-negated).
 Continue until at most one stone remains.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Max-heap simulation**, which itself belongs to
+the broader **Heap / Priority Queue** family of techniques. If the specific trick above
+feels like it came out of nowhere, that's the signal to step back and read
+[`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of problems in
+general (not just this one), the reusable template you can write from memory, the usual
+variations, and the mistakes people make applying it. Coming back to re-read this
+problem's approach afterward should make the specific choices here feel inevitable
+rather than clever.
 
 ## Complexity
 - Time: O(n log n)

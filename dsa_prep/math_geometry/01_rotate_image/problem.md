@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Math & Geometry
 **Pattern:** In-place matrix transform: transpose + reverse rows
-**Companies:** Amazon, Microsoft, Apple, Google
 
 ## Problem
 Given an `n x n` 2D matrix `matrix`, rotate it 90 degrees clockwise **in place**.
@@ -19,6 +18,16 @@ the matrix (swap `matrix[i][j]` with `matrix[j][i]` for `i < j`), then (2) rever
 row. Doing both achieves the rotation without needing an auxiliary matrix. (Rotating layer
 by layer, swapping 4 cells at a time, is an equivalent alternative that avoids the
 transpose step.)
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **In-place matrix transform: transpose + reverse
+rows**, which itself belongs to the broader **In-Place Matrix Manipulation** family of
+techniques. If the specific trick above feels like it came out of nowhere, that's the
+signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to
+recognize this family of problems in general (not just this one), the reusable template
+you can write from memory, the usual variations, and the mistakes people make applying
+it. Coming back to re-read this problem's approach afterward should make the specific
+choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(n²)

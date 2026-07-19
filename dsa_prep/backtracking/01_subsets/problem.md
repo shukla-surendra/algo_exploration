@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Backtracking
 **Pattern:** Include/exclude decision tree
-**Companies:** Amazon, Meta, Microsoft, Bloomberg — the foundational backtracking template.
 
 ## Problem
 Given an array `nums` of unique integers, return all possible subsets (the power set), in
@@ -20,6 +19,16 @@ At each index, backtrack over two choices: include `nums[i]` in the current subs
 don't. Recurse to the next index either way, and record the current subset (a copy) at
 every recursive call — every node of this decision tree is a valid subset, not just the
 leaves. This "include/exclude" template generalizes to many other backtracking problems.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Include/exclude decision tree**, which itself
+belongs to the broader **Backtracking** family of techniques. If the specific trick
+above feels like it came out of nowhere, that's the signal to step back and read
+[`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of problems in
+general (not just this one), the reusable template you can write from memory, the usual
+variations, and the mistakes people make applying it. Coming back to re-read this
+problem's approach afterward should make the specific choices here feel inevitable
+rather than clever.
 
 ## Complexity
 - Time: O(2^n) — that many subsets exist

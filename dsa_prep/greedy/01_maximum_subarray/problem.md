@@ -3,8 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Greedy
 **Pattern:** Kadane's Algorithm
-**Companies:** Amazon, Meta, Microsoft, LinkedIn, Bloomberg — one of the most iconic
-greedy/DP hybrid problems.
 
 ## Problem
 Given an integer array `nums`, find the contiguous subarray with the largest sum and
@@ -22,6 +20,16 @@ current position. At each element, decide greedily whether extending the previou
 subarray is better than starting fresh here: `current_sum = max(num, current_sum + num)`.
 Track the running `best` across all positions. The key insight: a negative `current_sum`
 can never help a future subarray, so it's always better to restart there.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Kadane's Algorithm**, which itself belongs to
+the broader **Greedy** family of techniques. If the specific trick above feels like it
+came out of nowhere, that's the signal to step back and read
+[`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of problems in
+general (not just this one), the reusable template you can write from memory, the usual
+variations, and the mistakes people make applying it. Coming back to re-read this
+problem's approach afterward should make the specific choices here feel inevitable
+rather than clever.
 
 ## Complexity
 - Time: O(n)

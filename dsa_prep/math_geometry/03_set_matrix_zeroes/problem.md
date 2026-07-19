@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Math & Geometry
 **Pattern:** Use the matrix's own first row/column as marker storage
-**Companies:** Amazon, Meta, Microsoft
 
 ## Problem
 Given an `m x n` matrix, if an element is 0, set its entire row and column to 0. Do it
@@ -22,6 +21,16 @@ for each zero found at `(r, c)` with `r, c > 0`, mark `matrix[r][0] = 0` and
 (since they double as storage). After marking, do a second pass setting `matrix[r][c] = 0`
 wherever `matrix[r][0] == 0` or `matrix[0][c] == 0` (working from `(1,1)` onward first, so
 the markers aren't corrupted early), then finally zero row 0 / column 0 based on the flags.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Use the matrix's own first row/column as marker
+storage**, which itself belongs to the broader **In-Place Matrix Manipulation** family
+of techniques. If the specific trick above feels like it came out of nowhere, that's the
+signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to
+recognize this family of problems in general (not just this one), the reusable template
+you can write from memory, the usual variations, and the mistakes people make applying
+it. Coming back to re-read this problem's approach afterward should make the specific
+choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(m·n)

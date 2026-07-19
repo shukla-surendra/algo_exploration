@@ -3,8 +3,6 @@
 **Difficulty:** Hard
 **Topic:** Tries
 **Pattern:** Trie of all target words + DFS/backtracking over the grid, pruned by the trie
-**Companies:** Amazon, Google, Meta, Microsoft — a classic hard trie + backtracking
-combination problem.
 
 ## Problem
 Given an `m x n` grid of characters `board` and a list of strings `words`, return all
@@ -26,6 +24,16 @@ direction if the current character exists as a child in the trie (this prunes de
 across all words simultaneously). When a trie node marked `is_end` is reached, record that
 word (and clear its flag to avoid duplicate results). Mark visited cells during the DFS
 and unmark on backtrack.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Trie of all target words + DFS/backtracking
+over the grid, pruned by the trie**, which itself belongs to the broader **Trie (Prefix
+Tree)** family of techniques. If the specific trick above feels like it came out of
+nowhere, that's the signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it
+covers how to recognize this family of problems in general (not just this one), the
+reusable template you can write from memory, the usual variations, and the mistakes
+people make applying it. Coming back to re-read this problem's approach afterward should
+make the specific choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(m·n·4^L) worst case, L = max word length, heavily pruned in practice by the trie

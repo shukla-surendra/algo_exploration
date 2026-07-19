@@ -3,8 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Binary Search
 **Pattern:** Binary search on the answer space
-**Companies:** Google, Amazon — classic "binary search over a monotonic feasibility
-function" problem.
 
 ## Problem
 Koko has `piles` of bananas and `h` hours before the guards return. Each hour she chooses
@@ -24,6 +22,16 @@ This isn't searching *in* an array — it's binary searching over the **answer**
 which ranges from 1 to `max(piles)`. Define `hours_needed(k) = sum(ceil(pile / k) for pile
 in piles)`. This function is monotonically non-increasing in `k` (a bigger eating speed
 never needs more hours), so binary search for the smallest `k` where `hours_needed(k) <= h`.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Binary search on the answer space**, which
+itself belongs to the broader **Binary Search** family of techniques. If the specific
+trick above feels like it came out of nowhere, that's the signal to step back and read
+[`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of problems in
+general (not just this one), the reusable template you can write from memory, the usual
+variations, and the mistakes people make applying it. Coming back to re-read this
+problem's approach afterward should make the specific choices here feel inevitable
+rather than clever.
 
 ## Complexity
 - Time: O(n · log(max(piles)))

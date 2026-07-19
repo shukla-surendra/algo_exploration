@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Graphs
 **Pattern:** Union-Find (Disjoint Set Union) or DFS/BFS over unvisited nodes
-**Companies:** Amazon, Meta, Google
 
 ## Problem
 Given `n` nodes labeled `0` to `n-1` and a list of undirected `edges`, return the number
@@ -22,6 +21,17 @@ for near-O(1) operations). The final answer is the number of distinct root paren
 remaining. (An equivalent DFS/BFS approach: iterate over every node, and each time an
 unvisited node is found, that's a new component — flood-fill mark everything reachable
 from it.)
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Union-Find (Disjoint Set Union) or DFS/BFS over
+unvisited nodes**, which itself belongs to the broader **Graph Traversal (BFS, DFS,
+Union-Find, Topological Sort)** family of techniques. If the specific trick above feels
+like it came out of nowhere, that's the signal to step back and read
+[`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of problems in
+general (not just this one), the reusable template you can write from memory, the usual
+variations, and the mistakes people make applying it. Coming back to re-read this
+problem's approach afterward should make the specific choices here feel inevitable
+rather than clever.
 
 ## Complexity
 - Time: O(n + E · α(n)) with union-find (α = inverse Ackermann, effectively constant)

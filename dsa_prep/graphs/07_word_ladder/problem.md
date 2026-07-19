@@ -3,7 +3,6 @@
 **Difficulty:** Hard
 **Topic:** Graphs
 **Pattern:** BFS shortest path over an implicit graph (words as nodes)
-**Companies:** Amazon, Meta, Google, LinkedIn — a classic hard BFS capstone.
 
 ## Problem
 Given `beginWord`, `endWord`, and a dictionary `wordList`, return the length of the
@@ -24,6 +23,17 @@ every pair of words directly (slow), generate all single-letter-wildcard pattern
 current word (e.g. `"h*t"`, `"*it"`, `"hi*"`) and look them up in a precomputed map from
 pattern -> list of matching words — this makes neighbor generation fast. Track visited
 words to avoid revisiting.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **BFS shortest path over an implicit graph (words
+as nodes)**, which itself belongs to the broader **Graph Traversal (BFS, DFS, Union-
+Find, Topological Sort)** family of techniques. If the specific trick above feels like
+it came out of nowhere, that's the signal to step back and read
+[`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of problems in
+general (not just this one), the reusable template you can write from memory, the usual
+variations, and the mistakes people make applying it. Coming back to re-read this
+problem's approach afterward should make the specific choices here feel inevitable
+rather than clever.
 
 ## Complexity
 - Time: O(N · L²) where N = number of words, L = word length (building the pattern map)

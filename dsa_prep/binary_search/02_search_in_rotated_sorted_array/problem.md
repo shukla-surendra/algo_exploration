@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Binary Search
 **Pattern:** Modified binary search using "which half is sorted"
-**Companies:** Amazon, Meta, Microsoft, Bloomberg — very frequently asked.
 
 ## Problem
 An ascending array `nums` (distinct values) has been rotated at an unknown pivot. Given
@@ -20,6 +19,16 @@ Even rotated, at least one half of `[left, mid]` or `[mid, right]` is always pro
 sorted. Check which half is sorted by comparing `nums[left]` to `nums[mid]`. Then check
 whether `target` falls within that sorted half's range — if so, recurse/iterate into it;
 otherwise the target must be in the other half. This keeps halving the search space.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Modified binary search using "which half is
+sorted"**, which itself belongs to the broader **Binary Search** family of techniques.
+If the specific trick above feels like it came out of nowhere, that's the signal to step
+back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family
+of problems in general (not just this one), the reusable template you can write from
+memory, the usual variations, and the mistakes people make applying it. Coming back to
+re-read this problem's approach afterward should make the specific choices here feel
+inevitable rather than clever.
 
 ## Complexity
 - Time: O(log n)

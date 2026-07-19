@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Binary Search
 **Pattern:** Modified binary search toward the rotation point
-**Companies:** Amazon, Microsoft, Meta
 
 ## Problem
 A sorted array of unique elements was rotated at an unknown pivot. Return the minimum
@@ -21,6 +20,16 @@ Compare `nums[mid]` to `nums[right]`. If `nums[mid] > nums[right]`, the minimum 
 rotation point) must be to the right of `mid`, so `left = mid + 1`. Otherwise the minimum
 is at `mid` or to its left, so `right = mid` (keep `mid` in range, since it could be the
 answer). Converges when `left == right`.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Modified binary search toward the rotation
+point**, which itself belongs to the broader **Binary Search** family of techniques. If
+the specific trick above feels like it came out of nowhere, that's the signal to step
+back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family
+of problems in general (not just this one), the reusable template you can write from
+memory, the usual variations, and the mistakes people make applying it. Coming back to
+re-read this problem's approach afterward should make the specific choices here feel
+inevitable rather than clever.
 
 ## Complexity
 - Time: O(log n)

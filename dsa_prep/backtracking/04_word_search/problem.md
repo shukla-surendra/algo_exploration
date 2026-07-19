@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Backtracking
 **Pattern:** Grid DFS/backtracking with in-place visited marking
-**Companies:** Amazon, Meta, Microsoft, Bloomberg
 
 ## Problem
 Given an `m x n` grid of characters `board` and a string `word`, return `True` if `word`
@@ -22,6 +21,16 @@ current cell matches `word[i]`, temporarily mark it visited (e.g. overwrite with
 sentinel character) and recurse into all 4 neighbors looking for `word[i+1]`; restore the
 cell afterward (backtrack) whether or not that branch succeeded. Reaching `i == len(word)`
 means the whole word was matched.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Grid DFS/backtracking with in-place visited
+marking**, which itself belongs to the broader **Backtracking** family of techniques. If
+the specific trick above feels like it came out of nowhere, that's the signal to step
+back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family
+of problems in general (not just this one), the reusable template you can write from
+memory, the usual variations, and the mistakes people make applying it. Coming back to
+re-read this problem's approach afterward should make the specific choices here feel
+inevitable rather than clever.
 
 ## Complexity
 - Time: O(m·n·4^L), L = len(word) — heavily pruned in practice

@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** 2-D Dynamic Programming
 **Pattern:** Grid DP, each cell = sum of cell above + cell to the left
-**Companies:** Amazon, Google, Bloomberg — the foundational grid-DP problem.
 
 ## Problem
 A robot sits at the top-left of an `m x n` grid and can only move down or right. Return
@@ -21,6 +20,16 @@ sum of ways to reach the cell above and the cell to the left, since those are th
 places you could have moved from. The first row and first column each have exactly 1 path
 (straight line). This can be computed with a single 1-D array reused across rows, updating
 in place left to right.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Grid DP, each cell = sum of cell above + cell
+to the left**, which itself belongs to the broader **2-D Dynamic Programming** family of
+techniques. If the specific trick above feels like it came out of nowhere, that's the
+signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to
+recognize this family of problems in general (not just this one), the reusable template
+you can write from memory, the usual variations, and the mistakes people make applying
+it. Coming back to re-read this problem's approach afterward should make the specific
+choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(m·n)

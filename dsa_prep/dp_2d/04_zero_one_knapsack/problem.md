@@ -3,8 +3,6 @@
 **Difficulty:** Medium
 **Topic:** 2-D Dynamic Programming
 **Pattern:** Bounded knapsack (each item used at most once)
-**Companies:** Amazon, Google, Bloomberg — the foundational knapsack pattern underlying
-many "partition"/"subset sum" style interview questions.
 
 ## Problem
 Given `n` items each with a `weight` and a `value`, and a knapsack capacity `W`, choose a
@@ -23,6 +21,16 @@ item, either skip it (`dp[i-1][w]`) or, if it fits (`weight[i-1] <= w`), take it
 the outer loop and processing weight capacity 0..W in the inner loop, using only the
 *previous* item's row, is what enforces "each item used at most once" (contrast with Coin
 Change's unbounded reuse, where the same row is reused within an item).
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Bounded knapsack (each item used at most
+once)**, which itself belongs to the broader **2-D Dynamic Programming** family of
+techniques. If the specific trick above feels like it came out of nowhere, that's the
+signal to step back and read [`../PATTERN.md`](../PATTERN.md) — it covers how to
+recognize this family of problems in general (not just this one), the reusable template
+you can write from memory, the usual variations, and the mistakes people make applying
+it. Coming back to re-read this problem's approach afterward should make the specific
+choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(n·W)

@@ -3,8 +3,6 @@
 **Difficulty:** Easy
 **Topic:** Sliding Window
 **Pattern:** Single pass, track running minimum
-**Companies:** Amazon, Meta, Bloomberg, Google — one of the most frequently asked screening
-questions.
 
 ## Problem
 Given an array `prices` where `prices[i]` is the stock price on day `i`, and you may buy
@@ -22,6 +20,16 @@ This is a sliding window with a variable left edge: keep a running `min_price` s
 far (the left/buy edge), and at each day compute the profit if selling today
 (`price - min_price`), tracking the best. Update `min_price` whenever a new lower price
 is seen. One pass, no extra space.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Single pass, track running minimum**, which
+itself belongs to the broader **Sliding Window** family of techniques. If the specific
+trick above feels like it came out of nowhere, that's the signal to step back and read
+[`../PATTERN.md`](../PATTERN.md) — it covers how to recognize this family of problems in
+general (not just this one), the reusable template you can write from memory, the usual
+variations, and the mistakes people make applying it. Coming back to re-read this
+problem's approach afterward should make the specific choices here feel inevitable
+rather than clever.
 
 ## Complexity
 - Time: O(n)

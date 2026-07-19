@@ -3,7 +3,6 @@
 **Difficulty:** Medium
 **Topic:** Stack
 **Pattern:** Monotonic Stack
-**Companies:** Amazon, Meta, Bloomberg, Google
 
 ## Problem
 Given an array `temperatures`, return an array `answer` where `answer[i]` is the number of
@@ -21,6 +20,15 @@ you go down the stack). For each new day, pop every index off the stack whose te
 is lower than today's — today is the "warmer day" they were waiting for, so set
 `answer[popped_index] = i - popped_index`. Then push today's index. Every index is pushed
 and popped at most once, so this is O(n) overall despite the inner while loop.
+
+## Why This Approach (Generalizing the Pattern)
+This problem is a concrete instance of **Monotonic Stack**, which itself belongs to the
+broader **Stack** family of techniques. If the specific trick above feels like it came
+out of nowhere, that's the signal to step back and read [`../PATTERN.md`](../PATTERN.md)
+— it covers how to recognize this family of problems in general (not just this one), the
+reusable template you can write from memory, the usual variations, and the mistakes
+people make applying it. Coming back to re-read this problem's approach afterward should
+make the specific choices here feel inevitable rather than clever.
 
 ## Complexity
 - Time: O(n)
