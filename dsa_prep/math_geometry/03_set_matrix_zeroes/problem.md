@@ -1,0 +1,28 @@
+# 3. Set Matrix Zeroes
+
+**Difficulty:** Medium
+**Topic:** Math & Geometry
+**Pattern:** Use the matrix's own first row/column as marker storage
+**Companies:** Amazon, Meta, Microsoft
+
+## Problem
+Given an `m x n` matrix, if an element is 0, set its entire row and column to 0. Do it
+**in place**.
+
+## Examples
+```
+Input: [[1,1,1],[1,0,1],[1,1,1]] -> [[1,0,1],[0,0,0],[1,0,1]]
+```
+
+## Approach
+Naively zeroing as you scan would cascade incorrectly (newly-zeroed cells would trigger
+more zeroing). Instead, use the matrix's own first row and first column as marker arrays:
+for each zero found at `(r, c)` with `r, c > 0`, mark `matrix[r][0] = 0` and
+`matrix[0][c] = 0`. Handle row 0 and column 0 themselves with two separate boolean flags
+(since they double as storage). After marking, do a second pass setting `matrix[r][c] = 0`
+wherever `matrix[r][0] == 0` or `matrix[0][c] == 0` (working from `(1,1)` onward first, so
+the markers aren't corrupted early), then finally zero row 0 / column 0 based on the flags.
+
+## Complexity
+- Time: O(m·n)
+- Space: O(1)
