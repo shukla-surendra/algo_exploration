@@ -1,0 +1,59 @@
+site_name: Staff-Level System Design Prep
+site_description: General distributed-systems design at staff-engineer depth — foundations and classic case studies, independent of the MLOps-specific track.
+docs_dir: staff_system_design
+site_dir: site-staff-system-design
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - toc:
+      permalink: true
+  - tables
+
+nav:
+  - Overview: README.md
+  - DSA Prep (Track A): http://127.0.0.1:8000/
+  - ML System Design (Track B): http://127.0.0.1:8001/
+  - 0. The Staff-Level Signal: 00_staff_level_signal/tutorial.md
+  - 1. Distributed Systems Foundations: 01_distributed_systems_foundations/tutorial.md
+  - "2. Design Twitter/X Feed": 02_design_twitter_feed/tutorial.md
+  - "3. Design a Chat System": 03_design_chat_system/tutorial.md
+  - "4. Design Ride-Hailing Dispatch": 04_design_ride_hailing_dispatch/tutorial.md
+  - "5. Design a Distributed Cache": 05_design_distributed_cache/tutorial.md
+  - "6. Design a Distributed Message Queue": 06_design_distributed_message_queue/tutorial.md
+  - "7. Design a Rate Limiter at Global Scale": 07_design_rate_limiter_at_scale/tutorial.md
+  - "8. Design a Video Streaming Service": 08_design_video_streaming/tutorial.md
+  - "9. Design a Web Crawler": 09_design_web_crawler/tutorial.md
+  - "10. Design Search Autocomplete": 10_design_search_autocomplete/tutorial.md

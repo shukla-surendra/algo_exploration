@@ -45,6 +45,7 @@ markdown_extensions:
 nav:
   - Overview: README.md
   - DSA Prep (Track A): http://127.0.0.1:8000/
+  - Staff-Level System Design: http://127.0.0.1:8002/
   - 0. Interview Framework: 00_interview_framework/tutorial.md
   - 1. Fundamentals & Building Blocks: 01_fundamentals/tutorial.md
   - 2. High-Throughput Ingestion Pipelines: 02_ingestion_pipeline/tutorial.md
@@ -54,8 +55,13 @@ nav:
   - 6. RAG + LLM-Serving at Scale: 06_rag_llm_serving_at_scale/tutorial.md
   - 7. Distributed Training & Ray/Ray Serve: 07_distributed_training_serving/tutorial.md
   - 8. ML Orchestration (Kubeflow/Argo vs Airflow): 08_ml_orchestration/tutorial.md
-  - 9. GitOps & CI/CD for ML: 09_gitops_ml_cicd/tutorial.md
-  - 10. Cost, Security & Multi-Region Governance: 10_cost_security_multiregion/tutorial.md
+  - 9. GitOps & CI/CD for ML:
+      - Tutorial: 09_gitops_ml_cicd/tutorial.md
+      - "Hands-On: ArgoCD": 09_gitops_ml_cicd/argocd_hands_on.md
+      - "Hands-On: DVC": 09_gitops_ml_cicd/dvc_hands_on.md
+  - 10. Cost, Security & Multi-Region Governance:
+      - Tutorial: 10_cost_security_multiregion/tutorial.md
+      - "Deep-Dive: Data Governance in Practice": 10_cost_security_multiregion/data_governance_deep_dive.md
   - Tricky MLOps Scenarios:
       - Overview: 11_tricky_scenarios/README.md
       - "1. Regional Feature Staleness": 11_tricky_scenarios/01_regional_feature_staleness.md

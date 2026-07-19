@@ -49,6 +49,7 @@ nav:
   - Home: README.md
   - Priority Checklist: TOP_LIST.md
   - System Design (Track B): http://127.0.0.1:8001/
+  - Staff-Level System Design: http://127.0.0.1:8002/
   - Arrays & Hashing:
       - Pattern: arrays_hashing/PATTERN.md
       - "1. Contains Duplicate": arrays_hashing/01_contains_duplicate/problem.md

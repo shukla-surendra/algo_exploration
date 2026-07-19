@@ -56,6 +56,12 @@ asked.
   [feature store tutorial](../03_feature_store_model_promotion/tutorial.md), not a
   separate, disconnected permission system.
 
+> **What does "data governance" actually mean, concretely?** See
+> [Data Governance in MLOps: What It Actually Means in Practice](data_governance_deep_dive.md)
+> — a practical breakdown with concrete tagging taxonomies, real access-control examples,
+> column-level lineage, the genuinely-hard deletion-vs-trained-model problem, and a
+> checklist, instead of the buzzword.
+
 ### Multi-Region & Disaster Recovery
 
 - **The core trade-off is the same CAP-theorem axis from the

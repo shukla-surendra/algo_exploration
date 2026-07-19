@@ -41,6 +41,10 @@ state and corrects drift automatically.
   steps, automatic rollback conditions) is itself declared in Git and executed by a
   controller.
 
+> **Want to actually run this?** See [Hands-On: ArgoCD](argocd_hands_on.md) — installing
+> ArgoCD, creating an Application, watching drift detection correct a manual change, and
+> configuring an Argo Rollouts canary with automated Prometheus-based guardrails.
+
 ### DVC vs. Delta Lake/Unity Catalog: The Actual Difference
 
 Both solve "version control for data," but for different environments:
@@ -56,6 +60,10 @@ Both solve "version control for data," but for different environments:
 you use for data versioning outside a full lakehouse platform" — its Git-native workflow
 (data version pointers committed alongside code) is what makes it attractive for smaller
 teams or file-heavy datasets (images, audio) that don't naturally fit a table format.
+
+> **Want to actually run this?** See [Hands-On: DVC](dvc_hands_on.md) — tracking a
+> dataset, pushing it to an S3 remote, versioning data across Git commits, and building a
+> reproducible `dvc.yaml` pipeline.
 
 ### CI/CD Testing Strategy Specific to ML
 
